@@ -54,6 +54,7 @@
     <Compile Include="PropertyTest.cs" />
     <Compile Include="StreetTest.cs" />
     <Compile Include="PlayerTest.cs" />
+    <Compile Include="RailwayStationTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
