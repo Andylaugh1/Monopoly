@@ -10,6 +10,8 @@ namespace Monopoly
         public Piece Piece { get; set; }
         public Dictionary<int, int> Money { get; set; }
         public bool IsInJail { get; set; }
+        public bool IsBankrupt { get; set; }
+        public bool IsBanker { get; set; }
 
         public Player(string Name, Piece Piece, Dictionary<int, int> Money)
         {
@@ -17,6 +19,8 @@ namespace Monopoly
             this.Piece = Piece;
             this.Money = Money;
             this.IsInJail = false;
+            this.IsBankrupt = false;
+            this.IsBanker = false;
         }
 
         public int GetTotalMoney()
