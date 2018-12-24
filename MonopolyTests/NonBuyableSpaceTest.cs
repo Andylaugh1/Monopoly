@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Monopoly;
 
@@ -12,7 +13,9 @@ namespace MonopolyTests
         [TestInitialize]
         public void TestInitialize()
         {
-            space1 = new NonBuyableSpace("Community Chest", NonBuyableSpaceType.Community_Chest);
+            var playersOnSpace = new List<Player>();
+
+            space1 = new NonBuyableSpace(playersOnSpace, "Community Chest", NonBuyableSpaceType.Community_Chest);
         }
 
         [TestMethod]

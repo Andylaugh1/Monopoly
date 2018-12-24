@@ -15,9 +15,12 @@ namespace Monopoly
         public int RentIfAlone { get; set; }
         public int RentIfSet { get; set; }
         public List<Property> Properties { get; set; }
+        
+        public Street() { }
 
-        public Street(string Name, StreetColour Colour, int Price, int HousePrice, int HotelPrice, int ReMortgageValue, int RentIfAlone, int RentIfSet, List<Property> Properties)
+        public Street(List<Player> PlayersCurrentlyOnSpace, string Name, StreetColour Colour, int Price, int HousePrice, int HotelPrice, int ReMortgageValue, int RentIfAlone, int RentIfSet, List<Property> Properties)
         {
+            this.PlayersCurrentlyOnSpace = PlayersCurrentlyOnSpace;
             this.Name = Name;
             this.Colour = Colour;
             this.Price = Price;

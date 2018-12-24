@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Monopoly;
 
@@ -12,7 +13,9 @@ namespace MonopolyTests
         [TestInitialize]
         public void TestInitialize()
         {
-            station1 = new RailwayStation("Fenchurch Street", 200, 50, 50, 200);
+            var playersOnSpace = new List<Player>();
+
+            station1 = new RailwayStation(playersOnSpace, "Fenchurch Street", 200, 50, 50, 200);
         }
 
         [TestMethod]

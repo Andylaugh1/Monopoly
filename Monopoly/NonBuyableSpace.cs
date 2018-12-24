@@ -6,11 +6,14 @@ namespace Monopoly
 {
     public class NonBuyableSpace : Space
     {
-        public string Name;
-        public NonBuyableSpaceType SpaceType;
+        public string Name { get; set; }
+        public NonBuyableSpaceType SpaceType { get; set; }
 
-        public NonBuyableSpace(string Name, NonBuyableSpaceType SpaceType)
+        public NonBuyableSpace() { }
+
+        public NonBuyableSpace(List<Player> PlayersCurrentlyOnSpace, string Name, NonBuyableSpaceType SpaceType)
         {
+            this.PlayersCurrentlyOnSpace = PlayersCurrentlyOnSpace;
             this.Name = Name;
             this.SpaceType = SpaceType;
         }
