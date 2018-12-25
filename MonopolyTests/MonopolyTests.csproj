@@ -57,6 +57,7 @@
     <Compile Include="RailwayStationTest.cs" />
     <Compile Include="NonBuyableSpaceTest.cs" />
     <Compile Include="MiddleCardTest.cs" />
+    <Compile Include="DiceTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
