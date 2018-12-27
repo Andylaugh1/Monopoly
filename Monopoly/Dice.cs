@@ -13,7 +13,6 @@ namespace Monopoly
         {
             this.SidesCount = 6;
             this.Random = new Random();
-
         }
 
         public int Roll()
