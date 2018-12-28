@@ -17,7 +17,7 @@ namespace MonopolyTests
         {
             Money = new Dictionary<int, int>();
             piece1 = new Piece("Car");
-            player1 = new Player("Andy", piece1, Money);
+            player1 = new Player("Andy");
         }
 
         [TestMethod]
